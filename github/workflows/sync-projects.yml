@@ -1,0 +1,32 @@
+```ymal
+name: Sync GitHub Projects
+
+on:
+  schedule:
+    - cron: "0 3   *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch repos
+        run: |
+          curl -s https://api.github.com/users/rickcreator87/repos \
+          | jq '[.[] | {
+              name: .name,
+              description: .description,
+              url: .html_url,
+              tags: ["repo"]
+            }]' > data/projects.json
+
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/projects.json
+          git commit -m "Sync projects" || echo "No changes"
+          git push
+```
