@@ -1,0 +1,13 @@
+fetch('/data/projects.json')
+  .then(res => res.json())
+  .then(projects => {
+    const container = document.getElementById('projects');
+    container.innerHTML = projects.map(p => `
+      <div class="card">
+        <h3>${p.name}</h3>
+        <p>${p.description}</p>
+        <a href="${p.url}" target="_blank">View Repo</a>
+        <div class="tags">${p.tags.map(t => <span>${t}</span>).join('')}</div>
+      </div>
+    `).join('');
+  });
