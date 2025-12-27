@@ -1,0 +1,13 @@
+Platform Status” section (operator energy)
+Add this below your hero:
+```html
+<section class="section">
+  <h2>Platform Status</h2>
+  <ul class="simple-list">
+    <li><span class="badge live">LIVE</span> GitHub Pages Hub</li>
+    <li><span class="badge docs">DOCS</span> Solana KYC SDK</li>
+    <li><span class="badge private">DEV</span> Compliance Dashboard</li>
+    <li><span class="badge private">INTERNAL</span> Master Key GitHub App</li>
+  </ul>
+</section>
+```
