@@ -1,9 +1,4 @@
-1. Fetch your GitHub Projects API  
-2. Convert it into projects.json  
-3. Commit it to the repo  
-4. Trigger a Pages rebuild
-
-``` json
+```yml
 fetch('/data/projects.json')
   .then(res => res.json())
   .then(projects => {
