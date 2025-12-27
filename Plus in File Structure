@@ -1,0 +1,4 @@
+text
+.github/
+  workflows/
+    sync-projects.yml
