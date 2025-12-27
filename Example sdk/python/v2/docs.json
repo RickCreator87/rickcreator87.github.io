@@ -1,0 +1,14 @@
+```json
+{
+  "language": "python",
+  "version": "v2",
+  "package": "gitdigital-master-key",
+  "install": "pip install gitdigital-master-key",
+  "quickstart": [
+    "from gitdigitalmasterkey import Client",
+    "client = Client(apikey=\"YOURKEY\")",
+    "orgs = client.organizations.list()"
+  ],
+  "notes": "Envelope encryption and least-privilege scopes by default."
+}
+```
