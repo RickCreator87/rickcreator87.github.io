@@ -1,25 +1,109 @@
+:root {
+  --bg: #0f172a;
+  --card: #020617;
+  --text: #e5e7eb;
+  --accent: #38bdf8;
+  --muted: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #0f172a;
-  color: #e5e7eb;
   margin: 0;
-  padding: 2rem;
-}
-
-main {
-  max-width: 800px;
-  margin: auto;
-}
-
-h1, h2 {
-  color: #38bdf8;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
 a {
-  color: #22d3ee;
+  color: var(--accent);
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.badges {
+  margin-top: 0.5rem;
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  margin-right: 0.4rem;
+}
+
+.badge.live {
+  background: #16a34a;
+  color: white;
+}
+
+.badge.docs {
+  background: #2563eb;
+  color: white;
+}
+
+.badge.private {
+  background: #7c2d12;
+  color: white;
+}
+
+.simple-list {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
 }
