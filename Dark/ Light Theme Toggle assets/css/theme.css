@@ -1,0 +1,16 @@
+```css
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+}
+
+[data-theme="dark"] {
+  --bg: #0d1117;
+  --text: #e6edf3;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+```
