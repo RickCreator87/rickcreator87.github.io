@@ -1,0 +1,7 @@
+```txt
+- Add TXT records for:
+  - GitHub Pages verification
+  - SPF (if you use email)
+  - DMARC
+  - DKIM (if needed)
+```
