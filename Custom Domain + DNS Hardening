@@ -1,0 +1,18 @@
+
+Required DNS Records
+```
+| Type | Name | Value |
+|------|------|--------|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | rickcreator87.github.io |
+```
+Hardening
+
+```
+CAA 0 issue "letsencrypt.org"
+CAA 0 issue "digicert.com"
+CAA 0 iodef "mailto:security@gitdigital.app"
+```
