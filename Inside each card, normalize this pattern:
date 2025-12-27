@@ -1,0 +1,7 @@
+Inside each card, normalize this pattern:
+
+<div class="card-links">
+  <a href="https://app.gitdigital.io" target="_blank">Live App</a>
+  <a href="https://gitdigital-products.github.io/solana-kyc-compliance-sdk/" target="_blank">Docs</a>
+  <a href="https://github.com/Gitdigital-products/solana-kyc-compliance-sdk" target="_blank">Repo</a>
+</div>
