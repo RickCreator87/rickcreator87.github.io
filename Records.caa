@@ -1,0 +1,7 @@
+- Add CAA records:
+
+```caa
+CAA 0 issue "letsencrypt.org"
+CAA 0 issue "digicert.com"
+CAA 0 iodef "mailto:security@gitdigital.app"
+```
