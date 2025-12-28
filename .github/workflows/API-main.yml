@@ -1,4 +1,4 @@
-```yml
+```yaml
 fetch('/data/projects.json')
   .then(res => res.json())
   .then(projects => {
